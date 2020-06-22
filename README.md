@@ -7,6 +7,6 @@ Description & functionment
 --------------------------
 
 It's just using some npm pakages :
-    * http
-    * MD5
-    * socket.io
+ * http
+ * MD5
+ * socket.io

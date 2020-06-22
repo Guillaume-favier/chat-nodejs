@@ -5,7 +5,9 @@ An open source chat with node js. You just need to put the folder html on your w
 
 Explain html & js :
 -------------------
+
 just using socket.io file from node server file to conect the two webserver.
+And the css framework is : [pure-css](https://purecss.io/)
 
 Explain nodejs :
 ----------------

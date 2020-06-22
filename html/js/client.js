@@ -1,5 +1,5 @@
 (function($){
-	var socket = io.connect('http://YOUR(SERVER.com:8080')
+	var socket = io.connect('http://YOUR-SERVER.com:8080')
 	var msg = $('#msgtpl').html()
 	var join = $('#join').html()
 	var leave = $('#dis').html()

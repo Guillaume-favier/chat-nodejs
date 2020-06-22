@@ -5,11 +5,21 @@ An open source chat with node js. You just need to put the folder html on your w
 
 Explain html & js :
 -------------------
-just using socket.io file from node server file files 
+just using socket.io file from node server file to conect the two webserver.
 
-
+Explain nodejs :
+----------------
 
 It's just using some npm pakages :
  * http
  * MD5
  * socket.io
+
+
+ Installation :
+ --------------
+
+ Stapes : 
+  * put files of html in a classic web server folder like apache2 wamp of ngix
+  * edit index.html and at the and of the file replace the line : `<script src="http://YOUR-SERVER.com/socket.io/socket.io.js"></script>` with your server.
+  * do the same thing with the file js/client.js `var socket = io.connect('http://YOUR-SERVER.com:8080')` but keep the `:8080`

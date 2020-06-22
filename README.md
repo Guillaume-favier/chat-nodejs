@@ -25,4 +25,4 @@ It's just using some npm pakages :
   * do the same thing with the file js/client.js `var socket = io.connect('http://YOUR-SERVER.com:8080')` but keep the `:8080`
   * install nodejs [here](https://nodejs.org/en/download/) is help
   * enter in the node folder
-  * 
+  * finaly you can enter `node server`

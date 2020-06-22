@@ -1,13 +1,13 @@
 {
-  "name": "node",
+  "name": "chat-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "An open source chat with node js. You just need to put the folder html on your web server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error (you noob) : no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Guillaume-favier",
   "license": "ISC",
   "dependencies": {
     "MD5": "^1.3.0",

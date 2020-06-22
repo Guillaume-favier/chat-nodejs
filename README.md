@@ -24,5 +24,5 @@ It's just using some npm pakages :
   * edit index.html and at the and of the file replace the line : `<script src="http://YOUR-SERVER.com/socket.io/socket.io.js"></script>` with your server ip.
   * do the same thing with the file js/client.js `var socket = io.connect('http://YOUR-SERVER.com:8080')` but keep the `:8080`
   * install nodejs [here](https://nodejs.org/en/download/) is help
-  * enter the node folder
+  * enter in the node folder
   * 

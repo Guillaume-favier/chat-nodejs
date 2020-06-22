@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+</head>
+<body>
+	<span style="display: none;">
+		<div id="msgtpl" class="message">
+			<div class="info">
+				[<strong>{{user.username}}</strong>] [{{h}}:{{m}}] : {{message}}
+			</div>
+		</div>
+		<span id="join">
+			** new user in the room : {{username}} **<br>
+		</span>
+		<span id="state">
+			** there is {{count}} person in the room **<br>
+		</span>
+		<span id="dis">
+			** the user : {{username}} left the room **<br>
+		</span>
+	</span>
+	<div id="users"></div>
+	<hr>
+	<div id="messages" >
+		
+	</div>
+	<div id="login">
+		<form action="" id="loginform">
+			<h1>Bienvenue</h1>
+			<p>Ceci est un chat via nodejs rentrez vos informations :</p>
+			<input type="text" name="login" placeholder="Nom d'utilisateur" id="username">
+			<input type="mail" name="mail" placeholder="mail" id="mail">
+			<input type="submit" value="Envoyez">
+		</form>
+	</div>
+	<form action="" id="form" style="display: none;">
+  		<input type="text" id="message" class="text">
+  		<input type="submit" id="send" value="Envoyez le message !" class="submit">
+	</form>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="js/mustache.js"></script>
+	<script src="http://3eme5.ml:8080/socket.io/socket.io.js"></script>
+	<script src="js/client.js"></script>
+</body>
+</html>

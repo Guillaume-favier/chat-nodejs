@@ -50,62 +50,48 @@
 			</div>
 		</div>
 	
-		<div id="main">
+		
 	<div id="main">
-		<div id="header">
+		<div class="header">
 			<h1 id="chat-nodejs">chat-nodejs</h1>
-			<p>An open source chat with node js. You just need to put the folder html on your web server</p>
+			<h3>An open source chat with node js. You just need to put the folder html on your web server</h3>
 		</div>
-		
-		<h2 id="explain-html-js-">Explain html &amp; js :</h2>
-		<p>just using socket.io file from node server file to conect the two webserver.
-			And the css framework is : <a href="https://purecss.io/">pure-css</a></p>
-		<h2 id="explain-nodejs-">Explain nodejs :</h2>
-		<p>It&#39;s just using some npm pakages :</p>
-		<ul>
-			<li>http</li>
-			<li>MD5</li>
-			<li>socket.io</li>
-		</ul>
-		<h2 id="installation-">Installation :</h2>
-		<p>Stapes : </p>
-		<ul>
-			<li>enter in the folder of the repo</li>
-			<li>put files of html in a classic web server folder like apache2 wamp of ngix.</li>
-			<li>edit index.html and at the and of the file replace the line :
-				<code class="lang-html">&lt;script src="http://YOUR-SERVER.com/socket.io/socket.io.js"&gt;&lt;/script&gt;</code>
-				with your server ip.</li>
-			<li>do the same thing with the file js/client.js
-				<pre><code class="lang-js"><span class="hljs-keyword">var</span> socket = io.connect(<span class="hljs-symbol">'http</span>:<span class="hljs-comment">//YOUR-SERVER.com:8080')</span></code></pre>
-				but keep the <code>:8080</code></li>
-			<li>install nodejs <a href="https://nodejs.org/en/download/">here</a> is help. if you have apt on GNU/Linux you can
-				enter :
-				<pre><code class="lang-bash">sudo apt-<span class="hljs-keyword">get</span> install nodejs npm</code></pre>
-			</li>
-			<li>enter in the node folder. </li>
-			<li>finaly you can enter <code>node server</code></li>
-		</ul>
-
-		<div id="users"></div>
-		<hr>
-		<div id="messages">
-		
-		</div>
-		<div id="login">
-			<form action="" id="loginform">
-				<h1>Bienvenue</h1>
-				<p>Ceci est un chat via nodejs rentrez vos informations :</p>
-				<input type="text" name="login" placeholder="Nom d'utilisateur" id="username">
-				<input type="mail" name="mail" placeholder="mail" id="mail">
-				<input type="submit" value="Envoyez">
+		<div class="content">
+			<h2 class="content-subhead">Explain html &amp; js :</h2>
+			<p>just using socket.io file from node server file to conect the two webserver.
+				And the css framework is : <a href="https://purecss.io/">pure-css</a></p>
+			<h2  class="content-subhead">Explain nodejs :</h2>
+			<p>It&#39;s just using some npm pakages :</p>
+			<ul>
+				<li>http</li>
+				<li>MD5</li>
+				<li>socket.io</li>
+			</ul>
+			<h2  class="content-subhead">Installation :</h2>
+			<p>for the installation step your can view my <a href="https://github.com/Guillaume-favier/chat-nodejs" target="_blank"><button type="submit" class="pure-button pure-button-primary">GitHub</button></a></p>
+			
+			<div id="users"></div>
+			<hr>
+			<div id="messages">
+			
+			</div>
+			<div id="login">
+				<form action="" id="loginform">
+					<h1>Bienvenue</h1>
+					<p>Ceci est un chat via nodejs rentrez vos informations :</p>
+					<input type="text" name="login" placeholder="Nom d'utilisateur" id="username">
+					<input type="mail" name="mail" placeholder="mail" id="mail">
+					<input type="submit" value="Envoyez">
+				</form>
+			</div>
+			<form action="" id="form" style="display: none;">
+				<input type="text" id="message" class="text">
+				<input type="submit" id="send" value="Envoyez le message !" class="submit">
 			</form>
 		</div>
-		<form action="" id="form" style="display: none;">
-			<input type="text" id="message" class="text">
-			<input type="submit" id="send" value="Envoyez le message !" class="submit">
-		</form>
+		
 	</div>
-	
+	<script src="https://purecss.io/js/ui.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="js/mustache.js"></script>
 	<script src="http://3eme5.ml:8080/socket.io/socket.io.js"></script>

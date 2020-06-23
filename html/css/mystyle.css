@@ -17,4 +17,8 @@ code{
     width: 15px;
     filter: invert(40%);
     vertical-align:middle;
+}.testtest{
+    fill: #fff;
+    filter: invert(100%);
+    vertical-align:middle;
 }

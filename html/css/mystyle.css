@@ -7,4 +7,9 @@ code{
 }#svg{
     fill: #fff;
     filter: invert();
+    height: 15px;
+    width: 15px;
+}#test{
+    vertical-align:middle;
+    display:inline-block;
 }

@@ -12,4 +12,9 @@ code{
 }#test{
     vertical-align:middle;
     display:inline-block;
+}.svgnorm{
+    height: 15px;
+    width: 15px;
+    filter: invert(40%);
+    vertical-align:middle;
 }

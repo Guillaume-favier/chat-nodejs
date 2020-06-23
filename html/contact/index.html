@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mystyle.css">
+    <title>Chat</title>
+</head>
+
+<body>
+    <span style="display: none;">
+        <div id="msgtpl" class="message">
+            <div class="info">
+                [<strong>{{user.username}}</strong>] [{{h}}:{{m}}] : {{message}}
+            </div>
+        </div>
+        <span id="join">
+            ** new user in the room : {{username}} **<br>
+        </span>
+        <span id="state">
+            ** there is {{count}} person in the room **<br>
+        </span>
+        <span id="dis">
+            ** the user : {{username}} left the room **<br>
+        </span>
+    </span>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">chat</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="/" class="pure-menu-link">Acceuil</a></li>
+                    <li class="pure-menu-item"><a href="/about" class="pure-menu-link">À propos</a></li>
+
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Services</a>
+                    </li>
+
+                    <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="/contact" class="pure-menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div class="header">
+                <h1 id="chat-nodejs">À propos</h1>
+            </div>
+            <div class="content">
+                <h2 class="content-subhead">Vous pouvez me contacter sur ces plateformes :</h2>
+                <div class="pure-menu pure-menu-horizontal">
+                    <a href="https://github.com/Guillaume-favier/chat-nodejs" class="pure-menu-heading pure-menu-link" target="_blank"><img src="/icon/github.svg" class="svgnorm">
+                    <div id="test">GitHub</div></a>
+                    <a href="https://twitter.com/perso_favier" class="pure-menu-heading pure-menu-link" target="_blank"><img src="/icon/twitter.svg" class="svgnorm">
+                    <div id="test">TWITTER</div>
+                    </a>
+                    <a href="mailto : guillaume.favier.dev@gmail.com" class="pure-menu-heading pure-menu-link" target="_blank"><img src="/icon/mail.svg"
+                            class="svgnorm">
+                        <div id="test">MAIL</div>
+                    </a>
+                    <a href="http://paypal.me/Guillaumefavier" class="pure-menu-heading pure-menu-link" target="_blank"><img src="/icon/dollar-sign.svg" class="svgnorm">
+                    <div id="test">PAYPAL</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

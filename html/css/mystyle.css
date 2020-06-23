@@ -4,4 +4,7 @@ code{
     border-radius: 5px;
     color: #333333;
     font-size: 13px;
+}#svg{
+    fill: #fff;
+    filter: invert();
 }

@@ -1,13 +1,15 @@
 chat-nodejs
 ===========
 
-An open source chat with node js. You just need to put the folder html on your web server
+An open source chat with node js.
 
 Explain html & js :
 -------------------
 
+You just need to put the folder html on your web server
 just using socket.io file from node server file to conect the two webserver.
-And the css framework is : [pure-css](https://purecss.io/)
+The css framework is : [pure-css](https://purecss.io/) and the icons are [feather-icons]('https://feathericons.com/')
+
 
 Explain nodejs :
 ----------------
